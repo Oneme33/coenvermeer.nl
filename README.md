@@ -17,5 +17,4 @@ ssh beheer@134.209.201.232 'cat > /var/www/coenvermeer.nl/www/index.html' < inde
 ```
 
 De submap `movienight/` op de server hoort bij een ander project en staat niet
-in deze repo. `frontendo/` op de server bevat alleen nog een doorverwijzing naar
-https://emberhold-forge.vercel.app; de oude kopie staat in `~/archief/` op de server.
+in deze repo.
