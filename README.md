@@ -16,5 +16,6 @@ map `/var/www/coenvermeer.nl/www` is van `beheer`, dus er is geen sudo nodig:
 ssh beheer@134.209.201.232 'cat > /var/www/coenvermeer.nl/www/index.html' < index.html
 ```
 
-De submap `movienight/` op de server hoort bij een ander project en staat niet
-in deze repo.
+De submappen `movienight/` en `film-atlas/` op de server horen bij andere
+projecten en staan niet in deze repo (`film-atlas/` is een doorverwijzing naar
+https://film-atlas.nl, neergezet door de deploy van Film Atlas).
