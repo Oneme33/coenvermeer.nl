@@ -13,8 +13,12 @@ De site draait op de Lukraak-server (Apache, HTTPS via Let's Encrypt). De
 map `/var/www/coenvermeer.nl/www` is van `beheer`, dus er is geen sudo nodig:
 
 ```bash
-ssh beheer@134.209.201.232 'cat > /var/www/coenvermeer.nl/www/index.html' < index.html
+COPYFILE_DISABLE=1 tar -czf - index.html favicon.ico favicon.svg apple-touch-icon.png \
+  | ssh beheer@134.209.201.232 'tar -xzf - -C /var/www/coenvermeer.nl/www'
 ```
+
+`robots.txt` en `sitemap.xml` in de webroot zijn met de hand gezet (niet in deze
+repo). Komt er een project bij op coenvermeer.nl, voeg het dan toe aan de sitemap.
 
 De submappen `movienight/` en `film-atlas/` op de server horen bij andere
 projecten en staan niet in deze repo (`film-atlas/` is een doorverwijzing naar
