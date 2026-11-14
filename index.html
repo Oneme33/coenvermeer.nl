@@ -237,7 +237,8 @@
     h1 { --i: 1; } .role { --i: 2; } .intro { --i: 3; }
     main > ul > li:nth-child(1) { --i: 4; } main > ul > li:nth-child(2) { --i: 5; }
     main > ul > li:nth-child(3) { --i: 6; } main > ul > li:nth-child(4) { --i: 7; }
-    main > ul > li:nth-child(5) { --i: 8; } footer { --i: 9; }
+    main > ul > li:nth-child(5) { --i: 8; } main > ul > li:nth-child(6) { --i: 9; }
+    footer { --i: 10; }
 
     @media (prefers-reduced-motion: reduce) {
       .mark, h1, .role, .intro, li, footer { animation: none; }
@@ -295,24 +296,17 @@
       <li class="projects">
         <details>
           <summary class="row">
-            <svg viewBox="1.2 1.2 21.6 21.6" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h4.2l2 2H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2Zm-3 17.5h6V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z"/></svg>
             <span class="label">Persoonlijke projecten</span>
-            <span class="sub">8 projecten</span>
+            <span class="sub">6 projecten</span>
             <svg class="chev stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <ul>
             <li>
-              <a class="row" href="https://coenvermeer.nl/do-nothing-island/" rel="noopener">
-                <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c2-3 14-3 16 0-2 3-14 3-16 0ZM12 16V7M8 10l4-6 4 6M7 13l5-7 5 7"/></svg>
-                <span class="label">Do Nothing Island</span>
-                <span class="sub">Een eiland dat vanzelf groeit · Webgame</span>
-              </a>
-            </li>
-            <li>
-              <a class="row" href="https://fact-market.nl" rel="noopener">
-                <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M4 16l5-5 4 3 7-7M15 7h5v5"/></svg>
-                <span class="label">Fact Market</span>
-                <span class="sub">Beleg in wat je weet · Webgame</span>
+              <a class="row" href="https://coenvermeer.nl/cbs/" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2h5l-1 3.5h-3Zm1 4.5h3L16 17l-4 5-4-5Z"/></svg>
+                <span class="label">Corporate Bullshit Generator</span>
+                <span class="sub">Managementtaal · Web</span>
               </a>
             </li>
             <li>
@@ -348,6 +342,39 @@
                 <svg viewBox="-0.2 0.55 23.4 23.4" aria-hidden="true"><path d="M3 9h14v4a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6V9Zm14 1.5h1.5a2.5 2.5 0 0 1 0 5H17v-2h1.5a.5.5 0 0 0 0-1H17v-2ZM2 20h16v2H2v-2ZM7.5 2.5c.9.8.9 1.7 0 2.5s-.9 1.7 0 2.5h-1.6c-.9-.8-.9-1.7 0-2.5s.9-1.7 0-2.5h1.6Zm4 0c.9.8.9 1.7 0 2.5s-.9 1.7 0 2.5H9.9c-.9-.8-.9-1.7 0-2.5s.9-1.7 0-2.5h1.6Z"/></svg>
                 <span class="label">Phin101</span>
                 <span class="sub">Vietnamese koffie · Web &amp; Android</span>
+              </a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li class="projects">
+        <details>
+          <summary class="row">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7 7h10a5 5 0 0 1 4.9 6l-.8 4a3 3 0 0 1-5.1 1.5L14 16.5h-4l-2 2A3 3 0 0 1 2.9 17l-.8-4A5 5 0 0 1 7 7Zm0 3v1.5H5.5V13H7v1.5h1.5V13H10v-1.5H8.5V10Zm9 .2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2Zm2.2 2.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2Z"/></svg>
+            <span class="label">Games</span>
+            <span class="sub">4 games</span>
+            <svg class="chev stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <ul>
+            <li>
+              <a class="row" href="https://coenvermeer.nl/destroy-simulator/" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.2 3.3 13 .5a1 1 0 0 1 1.4 0l5.7 5.7a1 1 0 0 1 0 1.4l-2.8 2.8a1 1 0 0 1-1.4 0l-1-1L4.6 18.7a2 2 0 0 1-2.8-2.8L12.1 5.6l-1.9-1a1 1 0 0 1 0-1.3Z"/></svg>
+                <span class="label">Destroy Simulator</span>
+                <span class="sub">Sloop een woonkamer · Web</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://coenvermeer.nl/do-nothing-island/" rel="noopener">
+                <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c2-3 14-3 16 0-2 3-14 3-16 0ZM12 16V7M8 10l4-6 4 6M7 13l5-7 5 7"/></svg>
+                <span class="label">Do Nothing Island</span>
+                <span class="sub">Een eiland dat vanzelf groeit · Web</span>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="https://fact-market.nl" rel="noopener">
+                <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M4 16l5-5 4 3 7-7M15 7h5v5"/></svg>
+                <span class="label">Fact Market</span>
+                <span class="sub">Beleg in wat je weet · Web</span>
               </a>
             </li>
             <li>

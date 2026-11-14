@@ -20,6 +20,7 @@ COPYFILE_DISABLE=1 tar -czf - index.html favicon.ico favicon.svg apple-touch-ico
 `robots.txt` en `sitemap.xml` in de webroot zijn met de hand gezet (niet in deze
 repo). Komt er een project bij op coenvermeer.nl, voeg het dan toe aan de sitemap.
 
-De submappen `movienight/` en `film-atlas/` op de server horen bij andere
-projecten en staan niet in deze repo (`film-atlas/` is een doorverwijzing naar
-https://film-atlas.nl, neergezet door de deploy van Film Atlas).
+De submappen op de server (`cbs/`, `destroy-simulator/`, `do-nothing-island/`,
+`movienight/`, `film-atlas/` enzovoort) horen bij andere projecten, worden door
+hun eigen deploy neergezet en staan niet in deze repo. Overschrijf bij een deploy
+van deze site dus alleen `index.html` (en eventueel de favicons).
